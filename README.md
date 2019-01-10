@@ -1,0 +1,2 @@
+# SALphotography
+GitHub Pages
