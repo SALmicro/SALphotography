@@ -683,6 +683,7 @@ a:hover {
   right: 0;
   top: 0;
   z-index: 0;
+  pointer-events: none;
 }
 blockquote {
   font-style: italic;
@@ -1376,6 +1377,42 @@ body {
 .dropup .dropdown-toggle::after {
   display: none;
 }
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .card-wrapper {
+    flex: auto!important;
+  }
+}
+.jq-selectbox li:hover,
+.jq-selectbox li.selected {
+  background-color: #149dcc;
+  color: #ffffff;
+}
+.jq-selectbox .jq-selectbox__trigger-arrow,
+.jq-number__spin.minus:after,
+.jq-number__spin.plus:after {
+  transition: 0.4s;
+  border-top-color: currentColor;
+  border-bottom-color: currentColor;
+}
+.jq-selectbox:hover .jq-selectbox__trigger-arrow,
+.jq-number__spin.minus:hover:after,
+.jq-number__spin.plus:hover:after {
+  border-top-color: #149dcc;
+  border-bottom-color: #149dcc;
+}
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default,
+.xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current {
+  color: #ffffff !important;
+  background-color: #149dcc !important;
+  box-shadow: none!important;
+}
+.xdsoft_datetimepicker .xdsoft_calendar td:hover,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div:hover {
+  color: #ffffff !important;
+  background: #ff3366 !important;
+  box-shadow: none !important;
+}
 .cid-reG1KEX72f {
   background-image: url("../../../assets/images/sal-4p242-2000x1335.jpg");
 }
@@ -1390,63 +1427,48 @@ body {
 .cid-reG1KEX72f .mbr-section-subtitle {
   font-style: italic;
 }
-.cid-reG1KEX72f I {
-  color: #7f1933;
-}
-.cid-reG1KEX72f H3 {
-  color: #ff7f9f;
-}
-.cid-reG1KEX72f P {
-  color: #55b4d4;
-}
-.cid-rqWKO0bF0N {
+.cid-rr75D02AMh {
   padding-top: 60px;
   padding-bottom: 60px;
-  background-image: url("../../../assets/images/blue-cap-car-2000x1335.jpg");
+  background-color: #c1c1c1;
+  background: linear-gradient(0deg, #c1c1c1, #149dcc);
 }
-.cid-rqWKO0bF0N .nav-tabs .nav-item.open .nav-link:focus,
-.cid-rqWKO0bF0N .nav-tabs .nav-link.active:focus {
-  outline: none;
-}
-.cid-rqWKO0bF0N .nav-tabs {
+.cid-rr75D02AMh .nav-tabs {
   -webkit-justify-content: center;
   justify-content: center;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   border-bottom: none;
 }
-.cid-rqWKO0bF0N .nav-tabs .nav-item {
-  padding: .5rem;
-}
-.cid-rqWKO0bF0N .nav-tabs .nav-link {
+.cid-rr75D02AMh .nav-tabs .nav-link {
+  box-sizing: border-box;
   color: #ffffff;
   font-style: normal;
   font-weight: 500;
+  border-radius: 3px;
   border: 1px solid #ffffff;
+  padding: 1rem 3rem;
+  margin: 0.4rem .8rem !important;
   transition: all .5s;
 }
-.cid-rqWKO0bF0N .nav-tabs .nav-link:hover {
-  cursor: pointer;
-  background-color: #149dcc;
+.cid-rr75D02AMh .nav-tabs .nav-link:hover {
+  background-color: #ff3366;
 }
-.cid-rqWKO0bF0N .nav-tabs .nav-link.active {
+.cid-rr75D02AMh .nav-tabs .nav-link.active {
   font-weight: 500;
   color: #ffffff;
   font-style: normal;
-  background-color: #149dcc;
-  border-color: #149dcc;
+  border: none;
+  background: #ff3366;
 }
-.cid-rqWKO0bF0N .nav-tabs .nav-link.active:hover {
-  background-color: #149dcc;
+.cid-rr75D02AMh .nav-tabs .nav-link.active:hover {
+  border: none;
 }
-.cid-rqWKO0bF0N p {
-  color: #ffffff;
+.cid-rr75D02AMh p {
+  color: #232323;
 }
-.cid-rqWKO0bF0N .mbr-text {
+.cid-rr75D02AMh .mbr-text {
   text-align: center;
-}
-.cid-rqWKO0bF0N H2 {
-  color: #cc2952;
 }
 .cid-reFbqxza8c {
   padding-top: 0px;
@@ -1510,26 +1532,26 @@ body {
   transition: 0.2s background ease-in-out;
   background: linear-gradient(to left, #554346, #45505b) !important;
 }
-.cid-rqWSFMDwCG {
-  padding-top: 90px;
-  padding-bottom: 90px;
+.cid-rr77MwONp2 {
+  padding-top: 0px;
+  padding-bottom: 0px;
   background-color: #ffffff;
 }
-.cid-rqWSFMDwCG .mbr-slider .carousel-control {
+.cid-rr77MwONp2 .mbr-slider .carousel-control {
   background: #1b1b1b;
 }
-.cid-rqWSFMDwCG .mbr-slider .carousel-control-prev {
+.cid-rr77MwONp2 .mbr-slider .carousel-control-prev {
   left: 0;
   margin-left: 2.5rem;
 }
-.cid-rqWSFMDwCG .mbr-slider .carousel-control-next {
+.cid-rr77MwONp2 .mbr-slider .carousel-control-next {
   right: 0;
   margin-right: 2.5rem;
 }
-.cid-rqWSFMDwCG .mbr-slider .modal-body .close {
+.cid-rr77MwONp2 .mbr-slider .modal-body .close {
   background: #1b1b1b;
 }
-.cid-rqWSFMDwCG .mbr-gallery-item > div::before {
+.cid-rr77MwONp2 .mbr-gallery-item > div::before {
   content: '';
   position: absolute;
   left: 0;
@@ -1542,13 +1564,13 @@ body {
   transition: 0.2s opacity ease-in-out;
   background: linear-gradient(to left, #554346, #45505b) !important;
 }
-.cid-rqWSFMDwCG .mbr-gallery-item > div:hover .mbr-gallery-title::before {
+.cid-rr77MwONp2 .mbr-gallery-item > div:hover .mbr-gallery-title::before {
   background: transparent !important;
 }
-.cid-rqWSFMDwCG .mbr-gallery-item > div:hover:before {
+.cid-rr77MwONp2 .mbr-gallery-item > div:hover:before {
   opacity: 0.7 !important;
 }
-.cid-rqWSFMDwCG .mbr-gallery-title {
+.cid-rr77MwONp2 .mbr-gallery-title {
   font-size: .9em;
   position: absolute;
   display: block;
@@ -1558,7 +1580,7 @@ body {
   color: #fff;
   z-index: 2;
 }
-.cid-rqWSFMDwCG .mbr-gallery-title:before {
+.cid-rr77MwONp2 .mbr-gallery-title:before {
   content: " ";
   width: 100%;
   height: 100%;
@@ -1833,7 +1855,4 @@ body {
 }
 .cid-reFcTAf8i1 P {
   text-align: left;
-}
-.cid-reMsYfBDtP {
-  background-image: url("../../../assets/images/jumbotron.jpg");
 }
